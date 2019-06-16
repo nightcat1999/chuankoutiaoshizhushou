@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: COMTOOL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/COMTOOL.res" /d "NDEBUG" /d "_AFXDLL" "E:\VC++ 串口调试助手源代码\VC++ 串口调试助手源代码\COMTOOL.rc"" 
+Creating temporary file "C:\Users\SK\AppData\Local\Temp\RSPCBB7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/COMTOOL.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\VC++ 串口调试助手源代码\VC++ 串口调试助手源代码\COMTOOL.cpp"
+"E:\VC++ 串口调试助手源代码\VC++ 串口调试助手源代码\COMTOOLDlg.cpp"
+"E:\VC++ 串口调试助手源代码\VC++ 串口调试助手源代码\SerialPort.cpp"
+]
+Creating command line "cl.exe @C:\Users\SK\AppData\Local\Temp\RSPCBB7.tmp" 
+Creating temporary file "C:\Users\SK\AppData\Local\Temp\RSPCBB8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/COMTOOL.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\VC++ 串口调试助手源代码\VC++ 串口调试助手源代码\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\SK\AppData\Local\Temp\RSPCBB8.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/COMTOOL.pdb" /machine:I386 /out:"Release/COMTOOL.exe"  ".\Release\COMTOOL.obj" ".\Release\COMTOOLDlg.obj" ".\Release\SerialPort.obj" ".\Release\StdAfx.obj" ".\Release\COMTOOL.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+COMTOOL.cpp
+COMTOOLDlg.cpp
+SerialPort.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+COMTOOL.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

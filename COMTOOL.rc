@@ -1,0 +1,266 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\COMTOOL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\COMTOOL.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于串口工具"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "串口工具 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_COMTOOL_DIALOG DIALOGEX 0, 0, 374, 313
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "串口工具"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "串口设置",IDC_STATIC,13,15,109,135
+    GROUPBOX        "通讯状态",IDC_STATIC,13,156,109,105
+    EDITTEXT        IDC_SendEdit,142,43,216,80,ES_MULTILINE | ES_AUTOVSCROLL,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_ReceiveEdit,141,169,216,92,ES_MULTILINE | WS_VSCROLL | 
+                    NOT WS_TABSTOP,WS_EX_DLGMODALFRAME
+    GROUPBOX        "发送",IDC_STATIC,131,13,236,137
+    GROUPBOX        "接收",IDC_STATIC,131,156,236,135
+    PUSHBUTTON      "退出",IDC_QUIT,29,269,29,14
+    PUSHBUTTON      "关于",IDC_ABOUT,72,269,29,14
+    CONTROL         "Check1",IDC_BHexS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    146,131,9,15
+    PUSHBUTTON      "清空显示",IDC_ClearS,231,129,53,15
+    PUSHBUTTON      "手工发送",IDC_Send,299,129,53,15
+    LTEXT           "十六进制发送",IDC_STATIC,158,135,55,10
+    CONTROL         "Check1",IDC_BHexR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    147,267,9,15
+    PUSHBUTTON      "清空显示",IDC_ClearR,239,267,53,15
+    LTEXT           "十六进制显示",IDC_STATIC,163,272,54,10
+    CONTROL         "",IDC_BAutoSend,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,23,9,15
+    LTEXT           "自动发送",IDC_STATIC,174,26,45,10
+    LTEXT           "发送周期",IDC_STATIC,232,25,33,11
+    EDITTEXT        IDC_SendPeriod,273,22,49,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "毫秒",IDC_STATIC,329,24,22,9
+    RTEXT           "选择串口：",IDC_STATIC,21,33,40,9
+    RTEXT           "波特率：",IDC_STATIC,21,50,40,9
+    RTEXT           "数据位：",IDC_STATIC,21,66,40,9
+    RTEXT           "校验位：",IDC_STATIC,21,83,40,9
+    RTEXT           "停止位：",IDC_STATIC,21,100,40,9
+    PUSHBUTTON      "打开串口",IDC_OpenClose,39,126,55,14
+    COMBOBOX        IDC_COM,61,31,58,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_Baudrate,61,47,58,76,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DataBits,61,64,58,71,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ParityBits,61,81,58,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_StopBits,61,99,58,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "串口状态：",IDC_STATIC,18,177,40,9
+    RTEXT           "发送字节：",IDC_STATIC,18,195,40,9
+    RTEXT           "接收字节：",IDC_STATIC,18,211,40,9
+    CTEXT           "关闭",IDC_Status,58,174,40,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "0",IDC_SendBytes,58,192,40,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "0",IDC_ReceiveBytes,58,209,40,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "清除计数",IDC_ClearCounter,39,236,55,14
+    CONTROL         "Static",IDC_Description,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | WS_GROUP,14,292,345,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "COMTOOL Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "COMTOOL\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "COMTOOL.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "COMTOOL 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COMTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 COMTOOL(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\COMTOOL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
